@@ -446,6 +446,8 @@ img {
 }
 
 .sm {
+  display: flex;
+  justify-content: center;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
@@ -465,4 +467,21 @@ img {
   opacity: 0px;
   padding-right: 16px;
   color: #ffffff;
+}
+
+.icon-item {
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  background: var(--CLOUD, #f4f4fd);
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
