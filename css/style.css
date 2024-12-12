@@ -155,13 +155,17 @@ img {
 
 .hero {
   flex-shrink: 0;
-  background: var(--GREY, rgba(46, 47, 66, 0.7));
   margin: 0 auto;
   background-position: top;
   background-size: cover;
-  background-image: url(../images/people.jpg);
-  width: 1440px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people.jpg);
+  max-width: 1440px;
   height: 600px;
+  background-position: center;
 }
 
 /* Section 1 */
@@ -194,6 +198,7 @@ img {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover {
@@ -446,15 +451,12 @@ img {
 }
 
 .sm {
-  display: flex;
-  justify-content: center;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left;
-  text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
@@ -476,12 +478,4 @@ img {
   width: 264px;
   height: 112px;
   flex-shrink: 0;
-}
-
-.icon-list {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
