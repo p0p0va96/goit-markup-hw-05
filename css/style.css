@@ -29,6 +29,8 @@ ul {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+}
+.logo {
   position: relative;
   color: #404bbf;
 }
@@ -152,27 +154,28 @@ img {
 /* main */
 
 .hero {
-  width: 1440px;
-  height: 600px;
   flex-shrink: 0;
   background: var(--GREY, rgba(46, 47, 66, 0.7));
-  background: url(https://s3-alpha-sig.figma.com/img/7c8d/46d4/7e83b6c8ee4603ea892aa8aaebb3c5fe?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KjJjQQbfX69ua6xRdi3ZnmupOSie7n~ZdePKgFEluPcbE2ct1-dsOZpy2uZdjGyzbza7i3IKetYoYv7r8vOa8eN9620uBGxjRGJCv64HCLq5LKtNw3M5U3MhEd0BBV6SghHvfQ89az5UHLzullbCksUIlvNrbXez~8nKEGmMuBaBquA81DudhmViUoXJFf-cxtIxJDZYQFRzuNOi0NOJ0wnq0GBdlA49V5fOpPiX3gHlVZjUvcnFY8yQ-lUUs9Yh6g3JwCQTA095MhM22iTJ6i279oNYOZKKlWie-Djd02wGW~7Q74JKXZ5dwMA6MgR1p0mmqad2~1~p5wbPaj6OTw__)
-    lightgray 0px -167.766px / 100% 139.922% no-repeat;
+  margin: 0 auto;
+  background-position: top;
+  background-size: cover;
+  background-image: url(../images/people.jpg);
+  width: 1440px;
+  height: 600px;
 }
 
 /* Section 1 */
 .hero-title {
+  display: flex;
+  width: 496px;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
-  margin: 0 auto;
   letter-spacing: 0.02em;
   color: #ffffff;
-  max-width: 496px;
-  padding-top: 188px;
-  padding-right: 472px;
-  padding-left: 472px;
-  padding-bottom: 292px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -180,7 +183,7 @@ img {
   min-width: 169px;
   height: 56px;
   border: none;
-  background-color: var(--button-bg-color, #4d5ae5);
+  background-color: #4d5ae5;
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
