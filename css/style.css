@@ -512,7 +512,7 @@ img {
   display: flex;
   align-items: baseline;
 }
-.container-footer {
+.container-footer .flex-container {
   display: flex;
   flex-direction: column;
   margin-right: 120px;
