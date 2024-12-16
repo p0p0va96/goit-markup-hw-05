@@ -411,7 +411,37 @@
                     </li>
                 </ul>
             </div>
-        </div>
+
+            <div class="footer-container">
+                <p class="footer-subscribe">Subscribe</p>
+                <form class="subscribe-form">
+                    <label>
+                        <input class="subscribe-input" type="email" name="subscribe-email" placeholder="E-mail">
+                    </label>
+                    <button class="subscribe-button" type="submit">
+                        Subscribe
+                        <svg width="24" height="24" class="subscribe-icon">
+                            <use href="./images/icons.svg#icon-telegram"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        const backdrop = document.getElementById('backdrop');
+        const closeBtn = document.getElementById('closeBtn');
+
+        // Open Modal (for demonstration)
+        backdrop.classList.add('is-open');
+
+        // Close Modal
+        closeBtn.addEventListener('click', () => {
+            backdrop.classList.remove('is-open');
+        });
+    </script>
+    </div>
     </footer>
 </body>
 
