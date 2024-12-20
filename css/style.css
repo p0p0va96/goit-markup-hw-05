@@ -752,7 +752,7 @@ img {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--color-text-main); /* Використання змінної #2E2F42 */
+  color: var(--color #2e2f42);
   margin-bottom: 16px;
 }
 
@@ -770,7 +770,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--color-text-secondary); /* Використання змінної #8e8f99 */
+  color: var(--color #8e8f99);
   display: block;
   margin-bottom: 4px;
 }
@@ -875,7 +875,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex; /* Застосовано display:inline-flex */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -895,7 +895,7 @@ img {
 
 /* Посилання на Privacy Policy */
 .privacy-link {
-  color: var(--color-primary); /* Використання змінної #4d5ae5 */
+  color: var(--color #4d5ae5);
   text-decoration: underline;
 }
 
