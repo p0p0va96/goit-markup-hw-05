@@ -632,6 +632,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 16px;
   margin-left: 80px;
 }
 
@@ -757,8 +758,6 @@ img {
 }
 
 /* Форма */
-.modal-form {
-}
 
 /* Групи форми */
 .form-group {
@@ -770,9 +769,9 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--color #8e8f99);
   display: block;
   margin-bottom: 4px;
+  color: var(--color #8e8f99);
 }
 
 /* Враппер для input */
@@ -859,7 +858,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--color-text-secondary); /* #8e8f99 */
+  color: var(--color #8e8f99);
   display: inline-flex;
   align-items: center;
   gap: 8px;
