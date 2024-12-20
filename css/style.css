@@ -684,6 +684,34 @@ img {
 }
 
 /* Modal */
+:root {
+  --color-primary: #4d5ae5;
+  --color-text-main: #2e2f42;
+  --color-text-secondary: #8e8f99;
+}
+
+/* Скидання та базові стилі */
+body,
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+label,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Контейнер для модалки */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -753,11 +781,13 @@ img {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--color #2e2f42);
+  color: var(--color-text-main); /* Використання змінної #2E2F42 */
   margin-bottom: 16px;
 }
 
 /* Форма */
+.modal-form {
+}
 
 /* Групи форми */
 .form-group {
@@ -769,9 +799,9 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  color: var(--color-text-secondary); /* Використання змінної #8e8f99 */
   display: block;
   margin-bottom: 4px;
-  color: var(--color #8e8f99);
 }
 
 /* Враппер для input */
@@ -858,7 +888,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--color #8e8f99);
+  color: #8e8f99;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -894,7 +924,7 @@ img {
 
 /* Посилання на Privacy Policy */
 .privacy-link {
-  color: var(--color #4d5ae5);
+  color: #4d5ae5;
   text-decoration: underline;
 }
 
