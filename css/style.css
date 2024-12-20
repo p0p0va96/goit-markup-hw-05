@@ -868,6 +868,7 @@ button {
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-bottom: 24px;
 }
 
 /* Приховуємо дефолтний чекбокс */
@@ -889,13 +890,11 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: inline-flex;
   align-items: center;
   gap: 8px;
   cursor: pointer;
 }
 
-/* Кастомний стиль чекбоксу (span) */
 .checkbox-custom {
   width: 16px;
   height: 16px;
