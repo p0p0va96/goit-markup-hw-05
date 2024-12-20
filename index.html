@@ -421,7 +421,7 @@
                     <button class="subscribe-button" type="submit">
                         Subscribe
                         <svg width="24" height="24" class="subscribe-icon">
-                            <use href=""></use>
+                            <use href="./images/telegram.svg#icon-telegram"></use>
                         </svg>
                     </button>
                 </form>
@@ -429,6 +429,79 @@
 
         </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal-backdrop">
+        <div class="modal-window">
+            <button class="modal-close-btn" type="button">
+                <svg width="8" height="8" class="modal-close-icon">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <!-- Перше поле (Name) -->
+                <div class="form-group" style="margin-bottom: 8px;">
+                    <label class="form-label" for="user-name">Name</label>
+                    <div class="input-wrapper" style="position: relative;">
+                        <input class="form-input" id="user-name" name="user-name" type="text">
+                        <svg width="18" height="24" class="input-icon"
+                            style="position: absolute; left:16px; top:50%; transform: translateY(-50%);">
+                            <use href="./images/modal-icon.svg#icon-name"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Друге поле (Phone) -->
+                <div class="form-group" style="margin-bottom: 8px;">
+                    <label class="form-label" for="user-phone">Phone</label>
+                    <div class="input-wrapper" style="position: relative;">
+                        <input class="form-input" id="user-phone" name="user-name" type="text">
+                        <svg width="18" height="24" class="input-icon"
+                            style="position: absolute; left:16px; top:50%; transform: translateY(-50%);">
+                            <use href="./images/modal-icon.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Третє поле (Email) -->
+                <div class="form-group" style="margin-bottom: 8px;">
+                    <label class="form-label" for="user-email">Email</label>
+                    <div class="input-wrapper" style="position: relative;">
+                        <input class="form-input" id="user-email" name="user-name" type="text">
+                        <svg width="18" height="24" class="input-icon"
+                            style="position: absolute; left:16px; top:50%; transform: translateY(-50%);">
+                            <use href="./images/modal-icon.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Четверте поле (Comment) -->
+                <div class="form-group" style="margin-bottom: 16px;">
+                    <label class="form-label" for="user-comment">Comment</label>
+                    <textarea class="form-textarea" id="user-comment" name="user-comment"
+                        placeholder="Text input"></textarea>
+                </div>
+
+                <!-- Чекбокс з Privacy Policy -->
+                <div class="form-checkbox-wrapper" style="margin-bottom: 24px;">
+                    <input class="checkbox visually-hidden" id="user-privacy" type="checkbox" name="user-privacy"
+                        value="true">
+                    <label class="checkbox-label" for="user-privacy">
+                        <span class="checkbox-custom">
+                            <svg width="10" height="8" class="checkbox-icon">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the
+                        <a href="#" class="privacy-link">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <!-- Кнопка відправлення форми -->
+                <button class="form-submit-btn" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
