@@ -429,7 +429,6 @@
 
         </div>
     </footer>
-    <!-- Modal -->
     <div class="modal-backdrop">
         <div class="modal-window">
             <button class="modal-close-btn" type="button">
@@ -437,7 +436,10 @@
                     <use href="./images/modal-icon.svg#icon-close-black"></use>
                 </svg>
             </button>
+
+
             <p class="modal-title">Leave your contacts and we will call you back</p>
+
             <form class="modal-form">
                 <!-- Перше поле (Name) -->
                 <div class="form-group">
@@ -473,23 +475,25 @@
                 </div>
 
                 <!-- Четверте поле (Comment) -->
-                <div class="form-group mb-16">
+                <div class="form-group" style="margin-bottom:16px;">
                     <label class="form-label" for="user-comment">Comment</label>
                     <textarea class="form-textarea" id="user-comment" name="user-comment"
                         placeholder="Text input"></textarea>
                 </div>
 
                 <!-- Чекбокс з Privacy Policy -->
-                <div class="form-checkbox-wrapper">
+                <div class="form-checkbox-wrapper" style="margin-bottom:24px;">
                     <input class="checkbox visually-hidden" id="user-privacy" type="checkbox" name="user-privacy"
                         value="true">
                     <label class="checkbox-label" for="user-privacy">
+                        <!-- span з display:inline-flex та іншими стилями -->
                         <span class="checkbox-custom">
                             <svg width="10" height="8" class="checkbox-icon">
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                         </span>
                         I accept the terms and conditions of the
+                        <!-- Посилання зі змінною кольору #4d5ae5 -->
                         <a href="#" class="privacy-link">Privacy Policy</a>
                     </label>
                 </div>
@@ -498,7 +502,6 @@
                 <button class="form-submit-btn" type="submit">Send</button>
             </form>
         </div>
-    </div>
     </div>
 </body>
 

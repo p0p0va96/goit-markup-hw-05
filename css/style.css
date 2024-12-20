@@ -1,23 +1,21 @@
-body {
-  font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #ffffff;
-  margin: 0;
-}
-
+body,
+p,
+ul,
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6,
+form,
+label,
+input,
+textarea,
+button {
   margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  padding-left: 0;
-  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -685,29 +683,6 @@ img {
 }
 
 /* Modal */
-
-/* Нормалізуйте відступи для прикладу */
-body,
-p,
-ul,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-form,
-label,
-input,
-textarea,
-button {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-/* Контейнер для модалки */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -770,37 +745,32 @@ button {
   fill: #ffffff;
 }
 
-/* Заголовок модалки */
+/* Заголовок (параграф) модалки */
 .modal-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--color-text-main);
+  color: var(--color-text-main); /* Використання змінної #2E2F42 */
   margin-bottom: 16px;
 }
 
 /* Форма */
 .modal-form {
-  /* Додаткові стилі форми за потреби */
 }
 
+/* Групи форми */
 .form-group {
   margin-bottom: 8px;
 }
 
-/* Для четвертого поля, де comment: */
-.mb-16 {
-  margin-bottom: 16px;
-}
-
-/* Загальні стилі для label */
+/* Стилі для label */
 .form-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--color-text-secondary);
+  color: var(--color-text-secondary); /* Використання змінної #8e8f99 */
   display: block;
   margin-bottom: 4px;
 }
@@ -810,7 +780,7 @@ button {
   position: relative;
 }
 
-/* Стилі для input */
+/* Інпут */
 .form-input {
   width: 100%;
   height: 40px;
@@ -843,7 +813,7 @@ button {
   fill: #4d5ae5;
 }
 
-/* Стилі для textarea */
+/* Текстове поле */
 .form-textarea {
   width: 100%;
   height: 120px;
@@ -866,7 +836,6 @@ button {
 
 /* Чекбокс */
 .form-checkbox-wrapper {
-  margin-bottom: 24px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -885,19 +854,19 @@ button {
   border: 0;
 }
 
-/* Стилі для label з чекбоксом */
+/* Label для чекбоксу */
 .checkbox-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--color-text-secondary);
+  color: var(--color-text-secondary); /* #8e8f99 */
   display: inline-flex;
   align-items: center;
   gap: 8px;
   cursor: pointer;
 }
 
-/* Стилі для кастомного чекбоксу */
+/* Кастомний стиль чекбоксу (span) */
 .checkbox-custom {
   width: 16px;
   height: 16px;
@@ -906,7 +875,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
+  display: inline-flex; /* Застосовано display:inline-flex */
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -926,7 +895,7 @@ button {
 
 /* Посилання на Privacy Policy */
 .privacy-link {
-  color: var(--color-primary);
+  color: var(--color-primary); /* Використання змінної #4d5ae5 */
   text-decoration: underline;
 }
 
@@ -945,7 +914,7 @@ button {
   background-color: #4d5ae5;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin: 0 auto; /* Щоб кнопка була по центру */
+  margin: 0 auto;
 }
 
 .form-submit-btn:hover,
