@@ -781,7 +781,7 @@ button {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--color-text-main); /* Використання змінної #2E2F42 */
+  color: #2e2f42; /* Використання змінної #2E2F42 */
   margin-bottom: 16px;
 }
 
@@ -799,7 +799,7 @@ button {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--color-text-secondary); /* Використання змінної #8e8f99 */
+  color: #8e8f99;
   display: block;
   margin-bottom: 4px;
 }
@@ -822,7 +822,7 @@ button {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--color-text-main);
+  color: #f4f4fd;
 }
 
 .form-input:focus {
