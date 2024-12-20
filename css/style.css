@@ -686,6 +686,28 @@ img {
 
 /* Modal */
 
+/* Нормалізуйте відступи для прикладу */
+body,
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+label,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Контейнер для модалки */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -764,9 +786,13 @@ img {
   /* Додаткові стилі форми за потреби */
 }
 
-/* Форм групи */
 .form-group {
-  /* margin-bottom застосовано inline в HTML для чіткості */
+  margin-bottom: 8px;
+}
+
+/* Для четвертого поля, де comment: */
+.mb-16 {
+  margin-bottom: 16px;
 }
 
 /* Загальні стилі для label */
@@ -806,8 +832,11 @@ img {
 
 /* Іконка для input */
 .input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* fill відсутній, щоб при focus застосувати з :focus */
 }
 
 .form-input:focus ~ .input-icon {
@@ -837,7 +866,7 @@ img {
 
 /* Чекбокс */
 .form-checkbox-wrapper {
-  /* margin-bottom застосовано inline в HTML */
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -865,6 +894,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 
 /* Стилі для кастомного чекбоксу */
@@ -891,7 +921,7 @@ img {
 .visually-hidden:checked + .checkbox-label .checkbox-custom {
   background-color: #404bbf;
   border: none;
-  fill: var(--color-text-main, #f4f4fd);
+  fill: #f4f4fd;
 }
 
 /* Посилання на Privacy Policy */
