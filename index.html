@@ -411,37 +411,23 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="footer-container">
-                <p class="footer-subscribe">Subscribe</p>
+            <!-- Третя секція: Форма підписки -->
+            <div class="footer-subscribe-container">
+                <p class="subscribe-text">Subscribe</p>
                 <form class="subscribe-form">
-                    <label>
-                        <input class="subscribe-input" type="email" name="subscribe-email" placeholder="E-mail">
+                    <label class="subscribe-label">
+                        <input class="subscribe-input" type="email" name="user-email" placeholder="E-mail">
                     </label>
                     <button class="subscribe-button" type="submit">
                         Subscribe
                         <svg width="24" height="24" class="subscribe-icon">
-                            <use href="./images/icons.svg#icon-telegram"></use>
+                            <use href=""></use>
                         </svg>
                     </button>
                 </form>
             </div>
-    </footer>
 
-    <!-- Script -->
-    <script>
-        const backdrop = document.getElementById('backdrop');
-        const closeBtn = document.getElementById('closeBtn');
-
-        // Open Modal (for demonstration)
-        backdrop.classList.add('is-open');
-
-        // Close Modal
-        closeBtn.addEventListener('click', () => {
-            backdrop.classList.remove('is-open');
-        });
-    </script>
-    </div>
+        </div>
     </footer>
 </body>
 
