@@ -182,7 +182,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/mobile/hero_bg-mobile@1x.jpg);
+    url(../images/people.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -191,91 +191,20 @@ img {
   max-width: 1440px;
 }
 
-@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .hero {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/mobile/hero_bg-mobile@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/tablet/hero_bg-tablet@1x.jpg);
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  (min-resolution: 192dpi) and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/tablet/hero_bg-tablet@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .hero {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/desktop/hero_bg-desktop@1x.jpg);
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
-  (min-resolution: 192dpi) and (min-width: 1158px) {
-  .hero {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/desktop/hero_bg-desktop@2x.jpg);
-  }
-}
-
 .container {
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .hero-title {
-  max-width: 216px;
-  margin: auto;
-  margin-bottom: 72px;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
+  font-size: 56px;
+  line-height: 1.07;
   text-align: center;
-  color: #fff;
-}
-
-@media screen and (min-width: 768px) {
-  .hero-title {
-    max-width: 496px;
-    font-size: 56px;
-    line-height: 1.07;
-    margin-bottom: 36px;
-  }
-}
-@media only screen and (min-width: 1158px) {
-  .hero-title {
-    margin-bottom: 48px;
-  }
+  margin: 0 auto;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  max-width: 496px;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -321,23 +250,12 @@ img {
   overflow: hidden;
 }
 
-@media only screen and (min-width: 768px) {
-  .advantages-list {
-    display: flex;
-    row-gap: 72px;
-    column-gap: 24px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-@media only screen and (min-width: 1158px) {
-  .advantages-list {
-    row-gap: 72px;
-    column-gap: 24px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.advantages-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .section-title {
@@ -370,46 +288,8 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
-.advantages-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.advantages-item:nth-last-child(-n + 4) {
-  margin-bottom: 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .advantages-item {
-    margin-bottom: 0;
-    max-width: 356px;
-  }
-}
-
-@media only screen and (min-width: 1158px) {
-  .advantages-item {
-    max-width: 264px;
-  }
-}
-
 .advantages-title {
   margin-bottom: 8px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .advantages-title {
-    text-align: left;
-  }
-}
-@media only screen and (min-width: 1158px) {
-  .advantages-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-  }
 }
 
 .icon-container {
